@@ -24,6 +24,12 @@
 
     lxc-netstat
     lxc-ps
+    
+    # ubuntu 18.04 container create
+    lxc-create -t download -n u1 -- -d ubuntu -r bionic -a amd64
+    # Centos 7 container create
+    lxc-create -t download -n c7 -- -d centos -r 7 -a amd64
+
 
 ### Security
 
